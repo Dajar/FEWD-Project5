@@ -1,0 +1,44 @@
+
+/***********************************************
+CONTAINERS STYLES
+***********************************************/
+
+.container {
+	width: 90%;
+	max-width: 1300px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 2.5% 25px;
+
+	@media #{$brk-wide} {
+		padding: 30px 2.5% 0;
+		width: 97.5%;
+	}
+}
+
+.projects {
+	@media #{$brk-wide} {
+		background-color: $white;
+	}
+}
+
+.projects h3 {
+	@media #{$brk-wide} {
+		padding-top: 60px;
+		padding-bottom: 5px;
+	}
+}
+
+.projects li {
+	@media #{$brk-narrow} {
+		width: 45%;
+		float: left;
+		margin: 2.5%;
+	}
+
+	@media #{$brk-wide} {
+		width: 28.3333%;
+		float: left;
+		margin: 2.5%;
+	}
+}

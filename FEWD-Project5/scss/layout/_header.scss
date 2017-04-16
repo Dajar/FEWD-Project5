@@ -1,0 +1,94 @@
+
+/***********************************************
+HEADER STYLES
+***********************************************/
+
+.wrapper {
+	@media #{$brk-wide} {
+		background-color: $wrapper-background-color;
+	}
+}
+
+.logo {
+	margin-top: 0;
+	text-align: center;
+	padding-bottom: 0px;
+
+	@media #{$brk-wide} {
+		display: inline-block;
+		float: left;
+		margin: 0;
+	}
+}
+
+.nav {
+	background-color: $nav-background-color;
+	width: 100%;
+}
+
+.profile {
+	margin-top: 50px;
+
+	@media #{$brk-wide} {
+			margin-top: 75px;
+	}
+}
+
+.profile p {
+	@media #{$brk-narrow} {
+			font-size: 1.3rem;
+			text-align: left;
+			letter-spacing: 1px;
+	}
+}
+
+.clearfix::after {
+	@media #{$brk-narrow} {
+			content: "";
+			display: table;
+			clear: both;
+	}
+}
+
+.main-nav li {
+	background-color: $white;
+	padding: 10px 15px;
+	margin-top: 5px;
+	text-align: center;
+	font-size: 1.25rem;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 800;
+
+	@media #{$brk-narrow} {
+			display: inline-block;
+			padding: 5px 15px;
+			background-color: $nav-background-color;
+	}
+
+	@media #{$brk-wide} {
+			margin: 0;
+			padding: 0 15px;
+			float: right;
+	}
+}
+
+.portfolio-image {
+	width: 100%;
+	box-shadow: 0px 10px 10px -6px #333;
+}
+
+.profile-image {
+	width: 75%;
+
+	@media #{$brk-narrow} {
+			margin-left: 10px;
+			float: right;
+			width: 40%;
+	}
+
+	@media #{$brk-wide} {
+			margin-left: 50px;
+			margin-right: 25px;
+	}
+}

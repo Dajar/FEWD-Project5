@@ -1,0 +1,60 @@
+/***********************************************
+Base Styles
+***********************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1em;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+
+	&:link, 
+	&:visited {
+		color: $link-color;
+	}
+
+	&:hover {
+		color: $hover-color;
+	}
+}
+
+ul,
+li {
+	 margin: 0;
+	 padding: 0;
+}
+
+h1,
+h2, 
+h3 {
+	color: $h1-color;
+}
+
+h1 {
+    @include base-text-styles(1.5rem, 800, $color: $primary-text-color);
+	padding-bottom: 10px;
+	@extend %upper;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+p {
+    @include base-text-styles(1.1rem, 500, $color: $primary-text-color);
+}
+
+hr {
+	@include horizontal-rule;
+}
+
